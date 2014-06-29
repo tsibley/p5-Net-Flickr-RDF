@@ -312,7 +312,7 @@ Readonly::Scalar my $GEONAMES_URL_CO   => $GEONAMES_URL . "countries/";
 Readonly::Scalar my $GEONAMES_API_FINDNEARBY => $GEONAMES_URL_WS . "findNearbyPlaceName";
 Readonly::Scalar my $GEONAMES_API_GTOPO30    => $GEONAMES_URL_WS . "gtopo30";
        
-Readonly::Scalar my $FLICKR_URL        => "http://www.flickr.com/";
+Readonly::Scalar my $FLICKR_URL        => "https://www.flickr.com/";
 Readonly::Scalar my $FLICKR_URL_PHOTOS => $FLICKR_URL . "photos/";
 Readonly::Scalar my $FLICKR_URL_PLACES => $FLICKR_URL . "places/";
 Readonly::Scalar my $FLICKR_URL_GEO    => $FLICKR_URL . "geo/";
