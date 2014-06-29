@@ -1173,7 +1173,7 @@ sub make_photo_triples {
 
         if (exists($data->{geo})) {
 
-                $self->make_geo_triples($data);
+                push @triples, ($self->make_geo_triples($data));
 
                 if ($self->{'cfg'}->param("rdf.query_geonames")) {
                         push @triples, ($self->make_geonames_triples($data));
