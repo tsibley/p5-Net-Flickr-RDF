@@ -439,7 +439,7 @@ sub explode_machinetag {
         my ($pred, $value) = split("=", $rest);
 
         if ($escape) {
-                $value = uri_escape($value);
+                $value = uri_escape_utf8($value);
         }
 
         return ($ns, $pred, $value);
@@ -1524,7 +1524,7 @@ sub build_flickr_places_url_oldskool {
 
         foreach my $label (reverse(@FLICKR_GEOPLACES)){
                 if ($data->{'geo'}->{$label}){
-                        push @urn,  uri_escape($data->{'geo'}->{$label});
+                        push @urn,  uri_escape_utf8($data->{'geo'}->{$label});
                 }
         }
 
